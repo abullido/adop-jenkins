@@ -61,7 +61,7 @@ fi
 # public_key_val=$(cat ${JENKINS_SSH_DIR}/id_rsa.pub)
 
 # Set correct permissions on SSH Key
-sudo chown -R 1000:1000 "${JENKINS_SSH_DIR}"
+chown -R 1000:1000 "${JENKINS_SSH_DIR}"
 
 # echo "Testing Gerrit Connection"
 # until curl -sL -w "\\n%{http_code}\\n" "http://${host}:${port}/gerrit" -o /dev/null | grep "200" &> /dev/null
