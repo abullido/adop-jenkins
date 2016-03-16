@@ -27,8 +27,7 @@ USER jenkins
 ENV ADOP_LDAP_ENABLED=true ADOP_SONAR_ENABLED=true ADOP_ANT_ENABLED=true ADOP_MAVEN_ENABLED=true ADOP_NODEJS_ENABLED=true ADOP_GERRIT_ENABLED=true
 
 RUN chown -R 1000:1000 /var/jenkins_home
-RUN sudo chmod 777 /usr/local/bin
-RUN sudo chmod 777 /var/log
+RUN chmod +x -R /usr/local/bin && chmod +x /var/log
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
 
 ENTRYPOINT ["/entrypoint.sh"]
