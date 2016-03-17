@@ -10,4 +10,4 @@ echo "start JENKINS"
 
 echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
 python /tmp/asdf.py
-su /usr/local/bin/jenkins.sh
+su root /usr/local/bin/jenkins.sh
