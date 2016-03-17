@@ -1,5 +1,5 @@
-FROM jenkins:1.609.1
-
+# FROM jenkins:1.609.1
+FROM centos:centos7
 MAINTAINER Nick Griffin, <nicholas.griffin>
 
 ENV GERRIT_HOST_NAME gerrit
