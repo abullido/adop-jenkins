@@ -19,7 +19,7 @@ COPY resources/m2/ /usr/share/jenkins/ref/.m2
 COPY resources/entrypoint.sh /entrypoint.sh
 
 # Reprotect
-USER root
+USER 0
 RUN chmod +x -R /usr/share/jenkins/ref/adop_scripts/ && chmod +x /entrypoint.sh
 #USER jenkins
 
