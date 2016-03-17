@@ -8,6 +8,6 @@ password=$GERRIT_JENKINS_PASSWORD
 nohup /usr/share/jenkins/ref/adop\_scripts/generate_key.sh -c ${host} -p ${port} -u ${username} -w ${password} &
 echo "start JENKINS"
 
-echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
-python /tmp/asdf.py
+#echo "import pty; pty.spawn('/bin/bash')" > /tmp/asdf.py
+#python /tmp/asdf.py
 /usr/local/bin/jenkins.sh
