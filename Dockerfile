@@ -29,5 +29,5 @@ RUN chown -R 1000:1000 /var/jenkins_home
 RUN chmod +x -R /usr/local/bin && chmod +x /var/log/copy_reference_file.log
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
 
-RUN echo whoami
+
 ENTRYPOINT ["/entrypoint.sh"]
