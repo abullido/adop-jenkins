@@ -17,7 +17,7 @@ COPY resources/views/ /usr/share/jenkins/ref/init.groovy.d/
 COPY resources/m2/ /usr/share/jenkins/ref/.m2
 COPY resources/entrypoint.sh /entrypoint.sh
 
-# Reprotect
+# Reprotect 
 USER 0
 RUN chmod +x -R /usr/share/jenkins/ref/adop_scripts/ && chmod +x /entrypoint.sh
 #USER jenkins
